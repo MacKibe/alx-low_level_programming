@@ -1,5 +1,4 @@
-#incude <stdio.h>
-
+#include <stdio.h>
 /**
  * main point
  * returns 0
