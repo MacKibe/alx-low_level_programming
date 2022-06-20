@@ -2,14 +2,14 @@
 
 /**
  * *_memcpy - copies n bytes from memory area
- * @dest: memory stored
- * @src: memory copied
+ * @storedMemory: memory stored
+ * @copyMemory: memory copied
  * @n: number of bytes
- * Return: copied memory with n bytes changed
+ * Return: copied memory and the number of bytes changed
  *
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *storedMemory, char *copyMemory, unsigned int n)
 
 {
 	int a = 0;
@@ -17,10 +17,10 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (n > 0)
 	{
-		dest[a] = src[b];
+		storedMemory[a] = copyMemory[b];
 		a++;
 		b++;
 		n--;
 	}
-	return (dest);
+	return (storedMemory);
 }
