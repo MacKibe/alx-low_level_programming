@@ -1,22 +1,18 @@
 #include "main.h"
 /**
- * _memset - fills the memory of the array with n bytes
- * @first-Arg: first argument
- * @sec-Arg: second argument
- * @third-Arg: third argument
- *
- * Description: return the required result
- * Return: return a char pointer
+ * *_memset - fills memory with a constant byte
+ * @f: first char
+ * @s: second char
+ * @n: unsigned int
+ * Return: s
  */
- 
-char *_memset(char *first_Arg, char sec-Arg, unsigned int n)
+char *_memset(char *f, char s, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; n > 0; i++, n--)
 	{
-		first-Arg[i] = sec-Arg;
+		f[i] = s;
 	}
-
-	return (first-Arg);
+	return (f);
 }
