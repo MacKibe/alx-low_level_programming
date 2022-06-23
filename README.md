@@ -1,1 +1,1 @@
-Contains all my projects in ALX program.
+Contains all my C language projects in ALX program.
